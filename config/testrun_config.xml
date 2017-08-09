@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QAS Demo" verbose="0" parallel="tests">
+ <test name="BDD Test android" enabled="true">
+  <parameter name="env.resources" value="resources/android" />
+  <classes>
+   <class
+    name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+  </classes>
+ </test>
+ <test name="BDD Test ios" enabled="true">
+  <parameter name="env.resources" value="resources/ios" />
+  
+  <classes>
+   <class
+    name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+  </classes>
+ </test>
+</suite>
